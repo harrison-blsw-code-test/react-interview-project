@@ -25,7 +25,7 @@ Copy this repository to a repository on your name and add the solution there. It
 * Some sort of Integration Test
 * Having a nice UI using a components library (Bootstrap?)
 * Divide the application in different pages and use a router
-* Adding state management (additional Bonus if using Mobx or Mobx-State-Tree instead of Redux)
+* Adding state management
 * Show common tools used for you daily development environment (linters, code formatter, git workflow, docker and so on)
 * Deploy the project somewhere
 
