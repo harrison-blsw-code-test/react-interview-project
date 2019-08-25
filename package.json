@@ -17,7 +17,7 @@
     "css-loader": "2.1.1",
     "dotenv": "6.2.0",
     "dotenv-expand": "4.2.0",
-    "eslint": "6.1.0",
+    "eslint": "^6.2.2",
     "eslint-config-react-app": "^5.0.1",
     "eslint-loader": "2.2.1",
     "eslint-plugin-flowtype": "3.13.0",
@@ -46,6 +46,7 @@
     "react-app-polyfill": "^1.0.2",
     "react-dev-utils": "^9.0.3",
     "react-dom": "^16.9.0",
+    "react-router-dom": "^5.0.1",
     "resolve": "1.12.0",
     "resolve-url-loader": "3.1.0",
     "sass-loader": "7.2.0",
@@ -108,7 +109,7 @@
     "modulePaths": [],
     "moduleNameMapper": {
       "^react-native$": "react-native-web",
-      "^.+\\.module\\.(css|sass|scss)$": "identity-obj-proxy"
+      "^.+\\.module\\.(css|sass|scss)$": "identity-obj-proxy",
     },
     "moduleFileExtensions": [
       "web.js",
@@ -133,6 +134,7 @@
     ]
   },
   "devDependencies": {
-    "eslint-config-airbnb": "18.0.1"
+    "eslint-config-airbnb": "18.0.1",
+    "eslint-plugin-jest": "^22.15.2"
   }
 }
