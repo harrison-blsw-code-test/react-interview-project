@@ -10,7 +10,7 @@ const httpLink = createHttpLink({
 const authLink = setContext((_, { headers }) => ({
   headers: {
     ...headers,
-    authorization: `token ${process.env.REACT_APP_TOKEN}`,
+    authorization: `token ${atob(process.env.REACT_APP_TOKEN)}`,
   },
 }));
 
