@@ -16,7 +16,7 @@ describe('UserScreen/dataTransformer', () => {
                 id: '123',
                 name: 'personal',
                 primaryLanguage: {
-                  color: '#4F5D95',
+                  color: 'green',
                   name: 'PHP',
                   __typename: 'Language',
                 },
@@ -29,7 +29,7 @@ describe('UserScreen/dataTransformer', () => {
                 id: '456',
                 name: 'laravel-git-ssh-deploy',
                 primaryLanguage: {
-                  color: '#89e051',
+                  color: 'blue',
                   name: 'Shell',
                   __typename: 'Language',
                 },
@@ -69,10 +69,12 @@ describe('UserScreen/dataTransformer', () => {
         {
           id: '123',
           name: 'personal',
+          colour: 'green',
         },
         {
           id: '456',
           name: 'laravel-git-ssh-deploy',
+          colour: 'blue',
         },
       ],
       totalRepositories: 24,

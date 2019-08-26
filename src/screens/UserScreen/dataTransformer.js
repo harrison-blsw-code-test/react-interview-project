@@ -7,6 +7,7 @@ const dataTransformer = ({ user }) => ({
   repositories: user.repositories.edges.map((edge) => ({
     id: edge.node.id,
     name: edge.node.name,
+    colour: edge.node.primaryLanguage.color,
   })),
   totalRepositories: user.repositories.totalCount,
   organisations: user.organizations.edges.map((edge) => ({
