@@ -15,6 +15,7 @@ describe('UserScreen/dataTransformer', () => {
               node: {
                 id: '123',
                 name: 'personal',
+                url: 'http://test.com/test/test',
                 primaryLanguage: {
                   color: 'green',
                   name: 'PHP',
@@ -28,6 +29,7 @@ describe('UserScreen/dataTransformer', () => {
               node: {
                 id: '456',
                 name: 'laravel-git-ssh-deploy',
+                url: 'http://dummy.com/test/test',
                 primaryLanguage: {
                   color: 'blue',
                   name: 'Shell',
@@ -47,6 +49,7 @@ describe('UserScreen/dataTransformer', () => {
               node: {
                 id: '789',
                 name: 'Organisation Ltd',
+                url: 'http://org.com/org/test',
                 __typename: 'Organization',
               },
               __typename: 'OrganizationEdge',
@@ -69,11 +72,13 @@ describe('UserScreen/dataTransformer', () => {
         {
           id: '123',
           name: 'personal',
+          url: 'http://test.com/test/test',
           colour: 'green',
         },
         {
           id: '456',
           name: 'laravel-git-ssh-deploy',
+          url: 'http://dummy.com/test/test',
           colour: 'blue',
         },
       ],
@@ -82,6 +87,7 @@ describe('UserScreen/dataTransformer', () => {
         {
           id: '789',
           name: 'Organisation Ltd',
+          url: 'http://org.com/org/test',
         },
       ],
       totalOrganisations: 1,

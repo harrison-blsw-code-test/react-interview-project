@@ -10,6 +10,7 @@ query getUserByUsernameQuery($username: String!) {
         node {
           id
           name
+          url
           primaryLanguage {
             color
             name
@@ -23,6 +24,7 @@ query getUserByUsernameQuery($username: String!) {
         node {
           id
           name
+          url
         }
       }
       totalCount

@@ -54,7 +54,7 @@ const UserScreen = ({
           <Typography variant="h4" gutterBottom align="center">{user.username}</Typography>
           <Typography variant="h6" gutterBottom align="center">{user.bio}</Typography>
         </BioBox>
-        <Box container display="flex" justifyContent="center">
+        <Box display="flex" justifyContent="center">
           <Box>
             {user.repositories.length > 0 && (
               <>
@@ -64,7 +64,7 @@ const UserScreen = ({
                 </Typography>
                 <List dense>
                   {user.repositories.map((repository) => (
-                    <ListItem key={repository.id}>
+                    <ListItem key={repository.id} button component="a" href={repository.url} target="_blank">
                       <ListItemAvatar>
                         <ColouredAvatar color={repository.colour}>
                           <StorgageIcon />
@@ -81,12 +81,12 @@ const UserScreen = ({
             {user.organisations.length > 0 && (
               <>
                 <Typography variant="h5" gutterBottom>
-                  {t('Repositories')}
+                  {t('Organisations')}
                   <Chip label={user.totalOrganisations} />
                 </Typography>
                 <List dense>
                   {user.organisations.map((organisation) => (
-                    <ListItem key={organisation.id}>
+                    <ListItem key={organisation.id} button component="a" href={organisation.url} target="_blank">
                       <ListItemAvatar>
                         <Avatar>
                           <WorkIcon />
