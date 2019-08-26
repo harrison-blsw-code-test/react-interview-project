@@ -7,15 +7,12 @@ const httpLink = createHttpLink({
   uri: 'https://api.github.com/graphql',
 });
 
-const authLink = setContext((_, { headers }) => {
-  const token = localStorage.getItem('token');
-  return {
-    headers: {
-      ...headers,
-      authorization: token ? `token ${token}` : 'token 24aa32b1943b0facbb3315c78a23d4a421e6cd27',
-    },
-  };
-});
+const authLink = setContext((_, { headers }) => ({
+  headers: {
+    ...headers,
+    authorization: `token ${process.env.REACT_APP_TOKEN}`,
+  },
+}));
 
 const client = new ApolloClient({
   link: authLink.concat(httpLink),
