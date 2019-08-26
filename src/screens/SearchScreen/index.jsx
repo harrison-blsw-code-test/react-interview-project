@@ -7,7 +7,7 @@ const SearchScreenContainer = ({
   history,
 }) => {
   const onChange = (selectedOption) => {
-    history.push(`/user/${selectedOption.node.id}`);
+    history.push(`/user/${selectedOption.node.username}`);
   };
 
   return (

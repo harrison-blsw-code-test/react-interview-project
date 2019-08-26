@@ -1,6 +1,6 @@
 import dataTransformer from './dataTransformer';
 
-describe('dataTransformer', () => {
+describe('UserLookup/dataTransformer', () => {
   it('transforms API data into select options', () => {
     const apiData = {
       search: {

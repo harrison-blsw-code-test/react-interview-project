@@ -1,5 +1,7 @@
 import SearchScreen from './screens/SearchScreen';
 import UserScreen from './screens/UserScreen';
+import RepositoriesScreen from './screens/RepositoriesScreen';
+import OrganisationsScreen from './screens/OrganisationsScreen';
 
 export default [
   {
@@ -7,7 +9,15 @@ export default [
     component: SearchScreen,
   },
   {
-    path: '/user/:id',
+    path: '/user/:username',
     component: UserScreen,
+  },
+  {
+    path: '/user/:username/repositories',
+    component: RepositoriesScreen,
+  },
+  {
+    path: '/user/:username/organisations',
+    component: OrganisationsScreen,
   },
 ];

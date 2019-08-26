@@ -12,7 +12,7 @@ const authLink = setContext((_, { headers }) => {
   return {
     headers: {
       ...headers,
-      authorization: token ? `token ${token}` : 'token 45518d7f1e51ff098ad001993bfc312235b0005b',
+      authorization: token ? `token ${token}` : 'token 24aa32b1943b0facbb3315c78a23d4a421e6cd27',
     },
   };
 });

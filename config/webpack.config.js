@@ -475,7 +475,7 @@ module.exports = function(webpackEnv) {
             {
               test: /\.(graphql|gql)$/,
               exclude: /node_modules/,
-              loader: 'graphql-tag/loader',
+              loader: require.resolve('graphql-tag/loader'),
             },
             // "file" loader makes sure those assets get served by WebpackDevServer.
             // When you `import` an asset, you get its (virtual) filename.

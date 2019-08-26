@@ -1,0 +1,31 @@
+query getUserByUsernameQuery($username: String!) {
+  user(login: $username) {
+    id
+    name
+    login
+    bio
+    avatarUrl
+    repositories(first: 6 after: null) {
+      edges {
+        node {
+          id
+          name
+          primaryLanguage {
+            color
+            name
+          }
+        }
+      }
+      totalCount
+    }
+    organizations(first: 6 after: null) {
+      edges {
+        node {
+          id
+          name
+        }
+      }
+      totalCount
+    }
+  }
+}
