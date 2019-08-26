@@ -11,7 +11,7 @@ const renderRoutes = (defintions) => defintions.map((route) => (
 
 const App = () => (
   <ApolloProvider client={apolloClient}>
-    <BrowserRouter>
+    <BrowserRouter basename={process.env.PUBLIC_URL}>
       <Switch>
         {renderRoutes(routes)}
         <Route component={NotFoundScreen} />
