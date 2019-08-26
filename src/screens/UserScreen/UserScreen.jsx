@@ -1,6 +1,7 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
 import PropTypes from 'prop-types';
+import CircularProgress from '@material-ui/core/CircularProgress';
 import userType from '../../types/userType';
 
 const UserScreen = ({
@@ -10,7 +11,7 @@ const UserScreen = ({
   const [t] = useTranslation();
 
   if (isLoading) {
-    return null;
+    return <CircularProgress />;
   }
   return (
     <>
