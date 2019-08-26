@@ -50,7 +50,7 @@ const UserLookupOption = ({
       </Counts>
       <Counts>
         <WorkIcon />
-        {`${node.repositoriesCount}`}
+        {`${node.organisationsCount}`}
       </Counts>
     </Counts>
   </Main>
