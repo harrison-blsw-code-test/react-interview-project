@@ -14,7 +14,7 @@ describe('UserLookupOption', () => {
           organisationsCount: 10,
         }}
       />,
-    ).contains(<span>testuser</span>)).toBe(true);
+    ).contains('testuser')).toBe(true);
   });
 
   it('displays the name', () => {
@@ -28,7 +28,7 @@ describe('UserLookupOption', () => {
           organisationsCount: 10,
         }}
       />,
-    ).contains(<span>Mrs Test</span>)).toBe(true);
+    ).contains('Mrs Test')).toBe(true);
   });
 
   it('displays the repositories count', () => {
@@ -42,7 +42,7 @@ describe('UserLookupOption', () => {
           organisationsCount: 10,
         }}
       />,
-    ).contains(<span>4</span>)).toBe(true);
+    ).contains('4')).toBe(true);
   });
 
   it('displays the organisations count', () => {
@@ -56,6 +56,6 @@ describe('UserLookupOption', () => {
           organisationsCount: 10,
         }}
       />,
-    ).contains(<span>10</span>)).toBe(true);
+    ).contains('10')).toBe(true);
   });
 });
