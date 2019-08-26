@@ -34,6 +34,10 @@ const BioBox = styled(Box)({
   marginBottom: '3em',
 });
 
+const ListBox = styled(Box)({
+  padding: '1em',
+});
+
 const UserScreen = ({
   user,
   isLoading,
@@ -55,7 +59,7 @@ const UserScreen = ({
           <Typography variant="h6" gutterBottom align="center">{user.bio}</Typography>
         </BioBox>
         <Box display="flex" justifyContent="center">
-          <Box>
+          <ListBox>
             {user.repositories.length > 0 && (
               <>
                 <Typography variant="h5" gutterBottom>
@@ -76,8 +80,8 @@ const UserScreen = ({
                 </List>
               </>
             )}
-          </Box>
-          <Box>
+          </ListBox>
+          <ListBox>
             {user.organisations.length > 0 && (
               <>
                 <Typography variant="h5" gutterBottom>
@@ -98,7 +102,7 @@ const UserScreen = ({
                 </List>
               </>
             )}
-          </Box>
+          </ListBox>
         </Box>
       </StyledPaper>
     </Container>
