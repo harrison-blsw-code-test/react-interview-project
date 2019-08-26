@@ -1,7 +1,7 @@
 import React from 'react';
 
-const OrganisationsScreenView = () => (
+const OrganisationsScreen = () => (
   <p>Organisations screen</p>
 );
 
-export default OrganisationsScreenView;
+export default OrganisationsScreen;

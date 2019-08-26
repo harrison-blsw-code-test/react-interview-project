@@ -1,7 +1,7 @@
 import React from 'react';
 
-const NotFoundScreenView = () => (
+const UserScreen = () => (
   <p>User screen</p>
 );
 
-export default NotFoundScreenView;
+export default UserScreen;

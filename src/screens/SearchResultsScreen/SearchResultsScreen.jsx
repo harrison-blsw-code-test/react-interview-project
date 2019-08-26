@@ -1,7 +1,7 @@
 import React from 'react';
 
-const SearchResultsScreenView = () => (
+const SearchResultsScreen = () => (
   <p>Search results screen</p>
 );
 
-export default SearchResultsScreenView;
+export default SearchResultsScreen;

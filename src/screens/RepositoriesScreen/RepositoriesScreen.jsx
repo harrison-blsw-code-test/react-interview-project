@@ -1,7 +1,7 @@
 import React from 'react';
 
-const RepositoriesScreenView = () => (
+const RepositoriesScreen = () => (
   <p>Repositories screen</p>
 );
 
-export default RepositoriesScreenView;
+export default RepositoriesScreen;

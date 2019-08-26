@@ -1,0 +1,19 @@
+query searchUsersQuery($query: String!) {
+  search(query: $query type: USER first: 5 after: null) {
+    edges {
+      node {
+        ... on User {
+          id
+          name
+          login
+          repositories {
+            totalCount
+          }
+          organizations {
+            totalCount
+          }
+        }
+      }
+    }
+  }
+}

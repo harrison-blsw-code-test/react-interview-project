@@ -1,19 +1,23 @@
 import React from 'react';
+import { ApolloProvider } from '@apollo/react-hooks';
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
-import NotFoundScreen from './screens/NotFoundScreen';
+import apolloClient from './services/apolloClient';
 import routes from './routes';
+import NotFoundScreen from './screens/NotFoundScreen';
 
 const renderRoutes = (defintions) => defintions.map((route) => (
   <Route exact key={route.path} path={route.path} component={route.component} />
 ));
 
 const App = () => (
-  <BrowserRouter>
-    <Switch>
-      {renderRoutes(routes)}
-      <Route component={NotFoundScreen} />
-    </Switch>
-  </BrowserRouter>
+  <ApolloProvider client={apolloClient}>
+    <BrowserRouter>
+      <Switch>
+        {renderRoutes(routes)}
+        <Route component={NotFoundScreen} />
+      </Switch>
+    </BrowserRouter>
+  </ApolloProvider>
 );
 
 export default App;
