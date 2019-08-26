@@ -7,6 +7,7 @@ import { searchUsersQuery } from './queries.gql';
 
 const UserLookupContainer = ({
   client,
+  onChange,
 }) => {
   const loadOptions = (query) => client.query({
     query: searchUsersQuery,
@@ -24,6 +25,7 @@ const UserLookupContainer = ({
   return (
     <UserLookup
       loadOptions={loadOptions}
+      onChange={onChange}
     />
   );
 };
@@ -32,6 +34,7 @@ UserLookupContainer.propTypes = {
   client: PropTypes.shape({
     query: PropTypes.func.isRequired,
   }).isRequired,
+  onChange: PropTypes.func.isRequired,
 };
 
 export default withApollo(UserLookupContainer);
