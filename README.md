@@ -22,6 +22,8 @@ GitHub have a guide here:
 
 https://help.github.com/en/articles/creating-a-personal-access-token-for-the-command-line
 
+IMPORTANT: Make sure you only give the token read access.
+
 ### Setting the environment variable
 
 The easiest way to do this is to add it to a `.env` file in the root.
