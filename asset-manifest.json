@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.js": "/react-interview-project/static/js/main.036ae976.chunk.js",
+    "main.js.map": "/react-interview-project/static/js/main.036ae976.chunk.js.map",
+    "runtime~main.js": "/react-interview-project/static/js/runtime~main.c7d1ec9d.js",
+    "runtime~main.js.map": "/react-interview-project/static/js/runtime~main.c7d1ec9d.js.map",
+    "static/js/2.5d9677be.chunk.js": "/react-interview-project/static/js/2.5d9677be.chunk.js",
+    "static/js/2.5d9677be.chunk.js.map": "/react-interview-project/static/js/2.5d9677be.chunk.js.map",
+    "index.html": "/react-interview-project/index.html",
+    "precache-manifest.2248099425ffa2ee66bd95a46001cd2b.js": "/react-interview-project/precache-manifest.2248099425ffa2ee66bd95a46001cd2b.js",
+    "service-worker.js": "/react-interview-project/service-worker.js"
+  }
+}
